@@ -154,6 +154,163 @@ query getAuditLog($monitorId: ID!) {
     }
   }
 }
+```
+**Parâmetro:**
 
+- $monitorId: ID! - Identificador único do monitor para o qual se deseja obter os logs de auditoria.
+
+**Descrição:**
+
+- A query começa identificando o nó específico (node) com base no ID fornecido ($monitorId).
+- Se o nó identificado for um Monitor, a query continua a obter os auditLog relacionados a este monitor.
+- Os logs de auditoria incluem:
+  - **ID do Log** (id)
+  - **Usuário** (user): Inclui id, name, e email.
+  - **Timestamp** (timestamp): Momento em que a mudança ocorreu.
+  - **ChangeSet** (changeSet): Detalha todas as mudanças aplicadas, como alterações em limiares, métricas, notas, contatos, e configurações específicas do monitor.
+
+**Estrutura de Resposta:**
+
+- A resposta é uma lista (edges) de logs de auditoria, onde cada log contém um nó (node) com os detalhes mencionados.
+
+**Uso no Sistema:**
+
+- Essa query é essencial para monitorar mudanças realizadas em monitores específicos, possibilitando auditorias detalhadas e análises retroativas de alterações críticas.
+- Pode ser utilizada por administradores do sistema ou outros serviços que precisem rastrear a evolução das configurações de um monitor e os responsáveis por essas mudanças.
+
+### **6.2 Exemplo de Resultado da Query 1**
+**Objetivo:** O exemplo a seguir demonstra como interpretar a resposta da query getAuditLog, que retorna os logs de auditoria associados a um monitor específico.
+
+**Query:**
+```graphql
+query getModelDetails($id: ID!) {
+  node(id: $id) {
+    ... on Model {
+      id
+      name
+      uri
+      createdAt
+      space {
+        id
+        name
+        createdAt
+      }
+      modelType
+      modelPredictionVolume(startTime: "2024-08-21T13:00:00.000Z" endTime: "2024-08-28T13:00:00.000Z") {
+        totalVolume
+      }
+      performanceMetrics(startDate: "2024-08-21T13:00:00.000Z" endDate: "2024-08-28T13:00:00.000Z") {
+        accuracy
+        mape
+      }
+      monitors(first: 50) {
+        totalCount
+        edges {
+          node {
+            id
+            name
+            creator {
+              name
+              email
+              status
+            }
+            createdDate
+            uri
+            threshold
+            latestComputedValue
+            isManaged
+            isTriggered
+            driftMetric
+            status
+          }
+        }
+      }
+      driftStatus {
+        status
+      }
+      dataQualityStatus {
+        status
+      }
+    }
+  }
+}
+```
+**Parâmetro:**
+
+- `$id: String!` - Identificador único do modelo que você deseja consultar.
+
+**Descrição:**
+
+- **id**: Identificador único do modelo.
+- **name**: Nome do modelo.
+- **uri**: URI (Uniform Resource Identifier) que referencia o modelo.
+- **createdAt**: Data e hora em que o modelo foi criado.
+- **space**: Detalhes do espaço ao qual o modelo pertence.
+- **modelType**: Tipo do modelo (ex.: categórico, regressão).
+- **modelPredictionVolume**: Volume de predições feitas pelo modelo dentro de um intervalo de tempo especificado.
+- **performanceMetrics**: Métricas de performance do modelo, como precisão e MAPE (Erro Percentual Absoluto Médio).
+- **monitors**: Lista de monitores associados ao modelo.
+- **driftStatus**: Status de drift do modelo.
+- **dataQualityStatus**: Status de qualidade dos dados associados ao modelo.
+
+**Interpretação do Resultado:**
+
+A resposta desta query fornecerá uma visão completa sobre o modelo, incluindo sua performance e os monitores que estão acompanhando o modelo. Isso é útil para auditar a qualidade do modelo, entender sua utilização e gerenciar o desempenho ao longo do tempo.
+
+
+### 6.3 Query 3: Listar Todos os Monitores de um Espaço Específico
+
+**Objetivo:** Esta query GraphQL é usada para listar todos os monitores associados a um espaço específico dentro do sistema, trazendo informações detalhadas sobre cada monitor, como ID, nome, categoria, métricas de drift e qualidade de dados.
+
+**Query:**
+```graphql
+query getMonitorsBySpace($id: ID!) {
+  node(id: $id) {
+    ... on Space {
+      name
+      monitors(first: 50) {
+        totalCount
+        edges {
+          node {
+            id
+            name
+            monitorCategory
+            threshold
+            latestComputedValue
+            driftMetric
+            dataQualityMetric
+            customMetric {
+              id
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+**Parâmetro:**
+
+- `$id: String!` - Identificador único do espaço que você deseja consultar.
+
+**Descrição:**
+
+- **name**: Nome do espaço.
+- **monitors**: Lista de monitores associados ao espaço.
+- **totalCount**: Número total de monitores no espaço.
+- **edges**: Detalhes dos monitores, incluindo ID, nome, categoria, limiar, métricas de drift, e métricas de qualidade de dados.
+
+**Interpretação do Resultado:**
+
+Essa query é fundamental para administrar e auditar os monitores dentro de um espaço específico. Com ela, é possível verificar rapidamente o status dos monitores, identificar problemas de qualidade de dados ou detectar drift em modelos de machine learning.
+
+### 7. Conclusão e Próximos Passos
+
+A arquitetura de logs apresentada proporciona uma solução robusta para monitoramento e auditoria dentro do sistema. As principais entidades e suas relações garantem uma captura eficaz de eventos, permitindo uma análise detalhada das atividades. Para melhorar ainda mais o sistema, os seguintes passos são recomendados:
+
+- **Revisão de Performance:** Continuar monitorando a performance das consultas e otimizar conforme necessário.
+- **Melhoria na Segurança:** Implementar controles de acesso mais rigorosos e criptografia de dados sensíveis nos logs.
+- **Documentação Contínua:** Atualizar continuamente a documentação à medida que o sistema evolui e novos requisitos surgem.
 
 
