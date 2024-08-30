@@ -62,15 +62,9 @@ A arquitetura de logs apresentada é composta por três principais entidades: **
 
 (Incluir aqui fluxos de processo ou diagramas de sequência que ilustram o fluxo de dados e eventos entre os componentes da arquitetura.)
 
-## 5. Considerações e Próximos Passos
+## 5. Consultas SQL e GraphQL na Arquitetura de Logs
 
-- **Normalização dos Dados:** Considerar a normalização das tabelas para evitar redundância de dados.
-- **Performance:** Avaliar a performance das consultas, especialmente em cenários com grande volume de logs.
-- **Segurança:** Implementar políticas de segurança para proteger o acesso aos logs sensíveis. Isso pode incluir criptografia dos dados, autenticação robusta e controle de acesso baseado em funções.
-
-## 6. Consultas SQL e GraphQL na Arquitetura de Logs
-
-### 6.1 Query 1: Recuperar Logs de Auditoria de um Monitor Específico
+### 5.1 Query 1: Recuperar Logs de Auditoria de um Monitor Específico
 
 **Objetivo:**
 Essa query GraphQL é utilizada para recuperar os logs de auditoria associados a um monitor específico no sistema. Esses logs de auditoria contêm informações detalhadas sobre mudanças realizadas em configurações e eventos relacionados ao monitor.
@@ -178,7 +172,7 @@ query getAuditLog($monitorId: ID!) {
 - Essa query é essencial para monitorar mudanças realizadas em monitores específicos, possibilitando auditorias detalhadas e análises retroativas de alterações críticas.
 - Pode ser utilizada por administradores do sistema ou outros serviços que precisem rastrear a evolução das configurações de um monitor e os responsáveis por essas mudanças.
 
-### **6.2 Exemplo de Resultado da Query 1**
+### **5.2 Exemplo de Resultado da Query 1**
 **Objetivo:** O exemplo a seguir demonstra como interpretar a resposta da query getAuditLog, que retorna os logs de auditoria associados a um monitor específico.
 
 **Query:**
@@ -258,7 +252,7 @@ query getModelDetails($id: ID!) {
 A resposta desta query fornecerá uma visão completa sobre o modelo, incluindo sua performance e os monitores que estão acompanhando o modelo. Isso é útil para auditar a qualidade do modelo, entender sua utilização e gerenciar o desempenho ao longo do tempo.
 
 
-### 6.3 Query 3: Listar Todos os Monitores de um Espaço Específico
+### 5.3 Query 3: Listar Todos os Monitores de um Espaço Específico
 
 **Objetivo:** Esta query GraphQL é usada para listar todos os monitores associados a um espaço específico dentro do sistema, trazendo informações detalhadas sobre cada monitor, como ID, nome, categoria, métricas de drift e qualidade de dados.
 
@@ -305,12 +299,6 @@ query getMonitorsBySpace($id: ID!) {
 
 Essa query é fundamental para administrar e auditar os monitores dentro de um espaço específico. Com ela, é possível verificar rapidamente o status dos monitores, identificar problemas de qualidade de dados ou detectar drift em modelos de machine learning.
 
-### 7. Conclusão e Próximos Passos
 
-A arquitetura de logs apresentada proporciona uma solução robusta para monitoramento e auditoria dentro do sistema. As principais entidades e suas relações garantem uma captura eficaz de eventos, permitindo uma análise detalhada das atividades. Para melhorar ainda mais o sistema, os seguintes passos são recomendados:
-
-- **Revisão de Performance:** Continuar monitorando a performance das consultas e otimizar conforme necessário.
-- **Melhoria na Segurança:** Implementar controles de acesso mais rigorosos e criptografia de dados sensíveis nos logs.
-- **Documentação Contínua:** Atualizar continuamente a documentação à medida que o sistema evolui e novos requisitos surgem.
 
 
