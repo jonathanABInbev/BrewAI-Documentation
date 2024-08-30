@@ -1,66 +1,66 @@
-# BrewDoc: A Central de Soluções de Dados e IA
+# BrewDoc
 
-## Sumário
+## Table of Contents
 
-1. [Introdução](#1-introdução)
-2. [Navegando pela Plataforma](#2-navegando-pela-plataforma)
-   - [2.1. Dados](#21-dados)
-   - [2.2. IA Generativa (GenAI)](#22-ia-generativa-genai)
+1. [Introduction](#1-introduction)
+2. [Navigating the Platform](#2-navigating-the-platform)
+   - [2.1. Data](#21-data)
+   - [2.2. Generative AI (GenAI)](#22-generative-ai-genai)
    - [2.3. Machine Learning (ML)](#23-machine-learning-ml)
-   - [2.4. Produtos de Dados](#24-produtos-de-dados)
-3. [Funcionalidades Detalhadas](#3-funcionalidades-detalhadas)
-   - [3.1. Engenharia de Dados](#31-engenharia-de-dados)
-   - [3.2. Operações de IA Generativa](#32-operações-de-ia-generativa)
-   - [3.3. Treinamento e Implantação de Modelos](#33-treinamento-e-implantação-de-modelos)
-   - [3.4. Gestão de Produtos de Dados](#34-gestão-de-produtos-de-dados)
+   - [2.4. Data Products](#24-data-products)
+3. [Detailed Features](#3-detailed-features)
+   - [3.1. Data Engineering](#31-data-engineering)
+   - [3.2. Generative AI Operations](#32-generative-ai-operations)
+   - [3.3. Model Training and Deployment](#33-model-training-and-deployment)
+   - [3.4. Data Product Management](#34-data-product-management)
 4. [BrewDoc Store](#4-brewdoc-store)
 
-## 1. Introdução
+## 1. Introduction
 
-O BrewDoc Store é uma plataforma que centraliza, organiza e facilita o acesso a soluções de Dados e Inteligência Artificial (IA) dentro da ABI. Projetada para atender às necessidades de equipes técnicas, gestores e stakeholders, a plataforma é um hub para exploração, solicitação e assinatura de produtos e serviços digitais impulsionados por dados.
+The BrewDoc Store is a platform that centralizes, organizes, and facilitates access to Data and Artificial Intelligence (AI) solutions within ABI. Designed to meet the needs of technical teams, managers, and stakeholders, the platform is a hub for exploring, requesting, and subscribing to data-driven digital products and services.
 
-## 2. Navegando pela Plataforma
+## 2. Navigating the Platform
 
-A estrutura do BrewDoc permite navegar facilmente pelas abas principais, cada uma dedicada a um aspecto do ecossistema de dados e IA:
+BrewDoc's structure allows for easy navigation through the main tabs, each dedicated to an aspect of the data and AI ecosystem:
 
-### 2.1. Dados
+### 2.1. Data
 
-O coração da gestão e governança de dados. Encontre documentos sobre pipelines de dados, conectores, normas de governança, padronização de dados e muito mais. Subcategorias como governança de dados, arquitetura de engenharia e fundamentos tecnológicos garantem a gestão eficaz, segura e compatível com as políticas corporativas.
+The core of data management and governance. Find documents on data pipelines, connectors, governance standards, data standardization, and more. Subcategories like data governance, engineering architecture, and technological fundamentals ensure effective, secure management compliant with corporate policies.
 
-### 2.2. IA Generativa (GenAI)
+### 2.2. Generative AI (GenAI)
 
-Abrange a IA Generativa com uma visão completa das ferramentas e práticas para desenvolver, gerenciar e implementar modelos de GenAI. Documentação abrangente sobre governança de IA, operações GenAI, integração com DevOps para IA Generativa e guias detalhados para configurar a plataforma, monitorar operações e garantir a eficácia e segurança dos modelos.
+Covers Generative AI with a comprehensive view of the tools and practices for developing, managing, and deploying GenAI models. Extensive documentation on AI governance, GenAI operations, integration with DevOps for Generative AI, and detailed guides to configure the platform, monitor operations, and ensure model effectiveness and security.
 
 ### 2.3. Machine Learning (ML)
 
-Informações sobre o ciclo de vida dos modelos de ML, com recursos sobre treinamento, execução, uso de AutoML no Databricks e diferentes métodos de treinamento. Essa aba fornece orientação essencial para iniciar e gerenciar processos de ML dentro da organização, com foco em práticas eficazes para alcançar resultados consistentes.
+Information on the ML model lifecycle, with resources on training, execution, AutoML usage on Databricks, and different training methods. This tab provides essential guidance to initiate and manage ML processes within the organization, focusing on effective practices to achieve consistent results.
 
-### 2.4. Produtos de Dados
+### 2.4. Data Products
 
-Fala-se sobre como gerenciar produtos de dados personalizados para diferentes necessidades de negócios, como Sucesso do Cliente, produtos SAZ e MAZ ML. Cada categoria inclui ferramentas e práticas para maximizar o valor dos dados no suporte às operações comerciais, com documentação detalhada sobre configuração, gerenciamento e utilização desses produtos para gerar insights valiosos e apoiar a tomada de decisões.
+Discusses managing custom data products for various business needs, such as Customer Success, SAZ and MAZ ML products. Each category includes tools and practices to maximize data value in supporting business operations, with detailed documentation on configuring, managing, and utilizing these products to generate valuable insights and support decision-making.
 
-## 3. Funcionalidades Detalhadas
+## 3. Detailed Features
 
-Dentro de cada aba, subcategorias e documentos especializados orientam os usuários em tarefas específicas:
+Within each tab, specialized subcategories and documents guide users through specific tasks:
 
-### 3.1. Engenharia de Dados
+### 3.1. Data Engineering
 
-Explora a arquitetura de engenharia, pipelines de dados e conectores para configurar e otimizar fluxos de dados, garantindo acessibilidade, segurança e integração entre sistemas.
+Explores engineering architecture, data pipelines, and connectors to set up and optimize data flows, ensuring accessibility, security, and integration between systems.
 
-### 3.2. Operações de IA Generativa
+### 3.2. Generative AI Operations
 
-Da configuração inicial à integração com DevOps, a documentação garante que as operações de IA Generativa sejam escaláveis, eficientes e em conformidade com as regulamentações de segurança e privacidade de dados.
+From initial setup to DevOps integration, the documentation ensures that Generative AI operations are scalable, efficient, and compliant with data security and privacy regulations.
 
-### 3.3. Treinamento e Implantação de Modelos
+### 3.3. Model Training and Deployment
 
-Informações valiosas sobre treinamento e execução de modelos de ML, incluindo guias para AutoML no Databricks, explicações sobre diferentes abordagens de treinamento e um ponto de partida para equipes que implementam e experimentam modelos de ML.
+Valuable information on ML model training and execution, including guides for AutoML on Databricks, explanations of different training approaches, and a starting point for teams implementing and experimenting with ML models.
 
-### 3.4. Gestão de Produtos de Dados
+### 3.4. Data Product Management
 
-Existe uma abordagem estruturada para desenvolver e gerenciar produtos orientados a dados que resolvem problemas específicos de negócios, integrando insights de IA e ML em produtos utilizados por várias equipes para aprimorar a eficiência operacional e a satisfação do cliente.
+There is a structured approach to developing and managing data-driven products that solve specific business problems, integrating AI and ML insights into products used by various teams to enhance operational efficiency and customer satisfaction.
 
 ## 4. BrewDoc Store
 
-Mais que um repositório, o BrewDoc é uma plataforma estratégica que integra múltiplas disciplinas no campo de dados e IA, facilitando a colaboração entre equipes e departamentos. Com sua estrutura modular, cada usuário, desde engenheiros de dados a cientistas de dados e gestores, encontra as ferramentas e informações para maximizar o valor dos dados.
+More than a repository, BrewDoc is a strategic platform that integrates multiple disciplines in the field of data and AI, facilitating collaboration between teams and departments. With its modular structure, each user, from data engineers to data scientists and managers, finds the tools and information needed to maximize data value.
 
-Adaptável e escalável, atende às necessidades de pequenos projetos e grandes operações de dados e IA. Com o BrewDoc Store, as organizações consolidam suas operações de dados, garantem a governança adequada e impulsionam a inovação através do uso eficaz de IA e Machine Learning.
+Adaptable and scalable, it meets the needs of both small projects and large data and AI operations. With BrewDoc Store, organizations consolidate their data operations, ensure proper governance, and drive innovation through the effective use of AI and Machine Learning.
