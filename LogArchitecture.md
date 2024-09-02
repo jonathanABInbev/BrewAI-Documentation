@@ -55,12 +55,7 @@ A arquitetura de logs apresentada é composta por três principais entidades: **
 ## 4. Diagramas e Fluxos
 
 ### 4.1 Diagrama Entidade-Relacionamento (ER)
-
-(Incluir aqui o diagrama ER mostrando as relações entre `Modelos`, `Triggers`, e `Informações de Log`.)
-
-### 4.2 Fluxos de Processo
-
-(Incluir aqui fluxos de processo ou diagramas de sequência que ilustram o fluxo de dados e eventos entre os componentes da arquitetura.)
+![Diagrama ER de banco de dados](https://github.com/user-attachments/assets/ccb6ba19-0f36-447e-bb54-1f3023cbbf22)
 
 ## 5. Consultas SQL e GraphQL na Arquitetura de Logs
 
