@@ -57,9 +57,9 @@ A arquitetura de logs apresentada é composta por três principais entidades: **
 ### 4.1 Diagrama Entidade-Relacionamento (ER)
 ![Diagrama ER de banco de dados](https://github.com/user-attachments/assets/ccb6ba19-0f36-447e-bb54-1f3023cbbf22)
 
-## 5. Consultas SQL e GraphQL na Arquitetura de Logs
+## 5. Consultas GraphQL na Arquitetura de Logs
 
-### 5.1 Query 1: Recuperar Logs de Auditoria de um Monitor Específico
+### 5.1 Query 1: Recuperar Logs de Auditoria de um Monitor Específico no Arize Utilizando GraphQL
 
 **Objetivo:**
 Essa query GraphQL é utilizada para recuperar os logs de auditoria associados a um monitor específico no sistema. Esses logs de auditoria contêm informações detalhadas sobre mudanças realizadas em configurações e eventos relacionados ao monitor.
