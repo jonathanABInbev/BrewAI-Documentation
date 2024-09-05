@@ -11,7 +11,7 @@
    - [Filtragem e Pesquisa de Logs](#filtragem-e-pesquisa-de-logs)
    - [Dashboards e Relatórios](#dashboards-e-relatórios)
 4. [Integração com Outros Componentes](#integração-com-outros-componentes)
-   - [Integração com o BrewPortal](#integração-com-o-brewportal)
+   - [Integração com o BrewAI](#integração-com-o-brewAI)
    - [Cron Jobs para Coleta de Logs](#cron-jobs-para-coleta-de-logs)
    - [Integração com FastAPI](#integração-com-fastapi)
 5. [Processo de Manutenção e Expansão](#processo-de-manutenção-e-expansão)
@@ -62,6 +62,14 @@ O Arize conta com dashboards e relatórios personalizáveis para monitorar logs 
 - **Relatórios Agendados**: Gere e exporte relatórios sobre atividades de logs em períodos especificados, fornecendo insights sobre o desempenho do sistema e possíveis problemas.
 
 ## Integração com Outros Componentes
+
+### Integração com o BrewAI
+
+A desenvolver.
+
+### Integração com FastAPI
+
+A desenvolver.
 
 ### Cron Jobs para Coleta de Logs
 Cron jobs dentro do BrewPortal são configurados para executar tarefas específicas que geram logs. Esses logs são então coletados pelo Arize, garantindo que todas as atividades agendadas sejam rastreadas.
