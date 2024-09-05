@@ -63,17 +63,8 @@ O Arize conta com dashboards e relatórios personalizáveis para monitorar logs 
 
 ## Integração com Outros Componentes
 
-### Integração com o BrewPortal
-O Arize se integra perfeitamente ao BrewPortal, garantindo que os logs de vários componentes sejam coletados e gerenciados centralmente. As principais integrações incluem:
-- **Sincronização de Dados**: Logs coletados do BrewPortal são automaticamente sincronizados com o Arize para gerenciamento unificado.
-
 ### Cron Jobs para Coleta de Logs
 Cron jobs dentro do BrewPortal são configurados para executar tarefas específicas que geram logs. Esses logs são então coletados pelo Arize, garantindo que todas as atividades agendadas sejam rastreadas.
-
-### Integração com FastAPI
-O Arize se integra com FastAPI para expor dados e logs a outros componentes do sistema ou serviços externos. Essa integração permite:
-- **Exposição de Dados em Tempo Real**: O FastAPI facilita o acesso em tempo real aos dados de logs para sistemas externos.
-- **Endpoints Personalizados**: Endpoints de API específicos podem ser criados para recuperar logs com base nos requisitos dos clientes.
 
 ## Processo de Manutenção e Expansão
 
