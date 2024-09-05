@@ -1,4 +1,4 @@
-# Documentação da Arquitetura de Logs
+# Entendendo a nossa Arquitetura de Logs
 
 ## Sumário
 
