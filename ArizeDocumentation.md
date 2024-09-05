@@ -1,4 +1,4 @@
-# Documentação do Arize
+# Iniciando a Coleta de Logs no Arize
 
 ## Sumário
 1. [Introdução](#introdução)
