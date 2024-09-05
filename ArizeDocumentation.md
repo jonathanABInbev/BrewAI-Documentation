@@ -1,4 +1,4 @@
-# Iniciando a Coleta de Logs no Arize
+# Coleta de Logs com Arize: Guia Prático de Configuração, Integração e Análise
 
 ## Sumário
 1. [Introdução](#introdução)
