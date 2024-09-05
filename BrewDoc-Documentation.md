@@ -63,4 +63,4 @@ There is a structured approach to developing and managing data-driven products t
 
 More than a repository, BrewDoc is a strategic platform that integrates multiple disciplines in the field of data and AI, facilitating collaboration between teams and departments. With its modular structure, each user, from data engineers to data scientists and managers, finds the tools and information needed to maximize data value.
 
-Adaptable and scalable, it meets the needs of both small projects and large data and AI operations. With BrewDoc Store, organizations consolidate their data operations, ensure proper governance, and drive innovation through the effective use of AI and Machine Learning.
+
