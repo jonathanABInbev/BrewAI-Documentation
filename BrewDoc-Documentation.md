@@ -1,4 +1,4 @@
-# BrewDoc
+# BrewDoc Store Technical Documentation
 
 ## Table of Contents
 
